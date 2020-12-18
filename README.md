@@ -6,5 +6,5 @@
 ## Usage
 
 ```
-./speedtest.sh 17838 "http://localhost:8086/write?db=speedtest" speedtest
+./speedtest.sh "http://localhost:8086/write?db=speedtest" speedtest
 ```

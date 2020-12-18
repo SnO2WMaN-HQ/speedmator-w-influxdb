@@ -1,10 +1,9 @@
 #!/bin/bash
+ 
+influx_post_url=$1
+influx_measurement=$2
 
-speedtest_server_id=$1
-influx_post_url=$2
-influx_measurement=$3
-
-csv=$(speedtest-cli --csv --server $speedtest_server_id)
+csv=$(speedtest-cli --csv)
 
 ping=$(echo $csv | cut -d ',' -f 6)
 download=$(echo $csv | cut -d ',' -f 7)
